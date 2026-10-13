@@ -28,11 +28,9 @@ namespace wpfWindow.pages
         {
             InitializeComponent();
 
-            books.Add(new Book { Title = "Мастер и Маргарита", Author = "М. Булгаков", Year = 1967 });
-            books.Add(new Book { Title = "Три товарища", Author = "Э.М. Ремарк", Year = 1936 });
-            books.Add(new Book { Title = "Пикник на обочине", Author = "Стругацкие", Year = 1972 });
-
-            listBooks.ItemsSource = books;
+            dataBooks.Items.Add(new Book { Title = "Мастер и Маргарита", Author = "М. Булгаков", Year = 1967 });
+            dataBooks.Items.Add(new Book { Title = "Три товарища", Author = "Э.М. Ремарк", Year = 1936 });
+            dataBooks.Items.Add(new Book { Title = "Пикник на обочине", Author = "Стругацкие", Year = 1972 });
 
         }
     }

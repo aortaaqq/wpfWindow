@@ -45,5 +45,10 @@ namespace wpfWindow
             if (MainFrame.CanGoBack) 
                 MainFrame.GoBack();
         }
+
+        private void ShowDesc_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new DescPage());
+        }
     }
 }

@@ -8,8 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainPage">
 
-    <StackPanel>
+    <StackPanel Margin="5">
         <TextBlock Text="Добро пожаловать на главную!" 
                    FontSize="20" Margin="5"/>
+        <TextBlock Text="Upd v.1.2: некоторые изменения в интерфейсе" 
+                   FontSize="16" Margin="10,10,10,0"/>
+        <TextBlock Text="Upd v.1.1: таблица обновлена до DataGrid" 
+                   FontSize="16" Margin="10,5,10,0"/>
+        <TextBlock Text="Upd v.1.0: программа оперирует с помощью кнопок сверху и по левому краю" 
+                   FontSize="16" Margin="10,5,10,0"/>
     </StackPanel>
 </Page>

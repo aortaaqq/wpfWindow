@@ -8,8 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"
-                    Background="Azure" Height="70">
-            <TextBlock Text="Библиотека" FontSize="50"/>
+                    Background="LightGreen" Height="70">
+            <TextBlock Text="Библиотека" FontSize="45" Margin="5,0,5,0"/>
             <Separator Width="40" Margin="10"/>
 
             <StackPanel>
@@ -19,13 +19,14 @@
         </StackPanel>
 
         <StackPanel DockPanel.Dock="Left"
-            Background="Bisque" Width="120">
+            Background="Beige" Width="120">
             <Button Content="Главная" Margin="5" Click="ShowMain_Click"/>
             <Button Content="Каталог книг" Margin="5" Click="ShowCatalog_Click"/>
+            <Button Content="О программе" Margin="5" Click="ShowDesc_Click"/>
         </StackPanel>
-        
 
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="Aqua"/>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Background="PowderBlue"/>
 
     </DockPanel>
 </Window>
