@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using wpfWindow.pages;
+using wpfWindow.windows;
 
 namespace wpfWindow.pages
 {
@@ -31,6 +33,22 @@ namespace wpfWindow.pages
             dataBooks.Items.Add(new Book { Title = "Мастер и Маргарита", Author = "М. Булгаков", Year = 1967 });
             dataBooks.Items.Add(new Book { Title = "Три товарища", Author = "Э.М. Ремарк", Year = 1936 });
             dataBooks.Items.Add(new Book { Title = "Пикник на обочине", Author = "Стругацкие", Year = 1972 });
+
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            Book b = new Book();
+            AddBookWindow w = new AddBookWindow();
+            w.DataContext = b;
+            if (w.ShowDialog() == true)
+            {
+                dataBooks.Items.Add(b);
+            }
+        }
+
+        private void Del_Click(object sender, RoutedEventArgs e)
+        {
 
         }
     }

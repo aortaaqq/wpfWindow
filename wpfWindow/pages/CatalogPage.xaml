@@ -22,8 +22,8 @@
         </DataGrid>
 
         <StackPanel Orientation="Horizontal" >
-            <Button Content="Добавить книгу" Margin="10" Width="100" Height="30"/>
-            <Button Content="Удалить" Margin="10" Width="100" Height="30"/>
+            <Button Content="Добавить книгу" Click="Add_Click" Margin="10" Width="100" Height="30"/>
+            <Button Content="Удалить" Click="Del_Click" Margin="10" Width="100" Height="30"/>
         </StackPanel>
 
     </StackPanel>
